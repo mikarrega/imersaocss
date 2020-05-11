@@ -1,0 +1,40 @@
+body {
+    background-image: url(https://pngimage.net/wp-content/uploads/2018/06/fundo-cinza-claro-png.png);
+    background-size: auto 100vh;
+    font-family: roboto;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #7159c1;
+    font-family: roboto;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-title {
+    color: #4B4B4B;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    color: #4B4B4B;
+    text-align: center;
+  }
+  
