@@ -1,13 +1,37 @@
+/* soft reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-image: url(https://pngimage.net/wp-content/uploads/2018/06/fundo-cinza-claro-png.png);
     background-size: auto 100vh;
     font-family: roboto;
     height: 100vh;
   }
+
+  /*Se a tela tiver pelo menos 400px, vai carregar estes estilos*/  
+  @media (min-width: 400px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Alinha ao centro da página (acompanhado do flex)*/
+    align-items: center; /* Alinha ao meio da página (acompanhado do flex)*/
+  }
   
   .menu {
     background-color: #7159c1;
     font-family: roboto;
+    position: fixed; /* Fixar o menu quando rolar pela página*/
+    width: 100vw;
+    top: 0; /*Deixa a barra de menu coladinha no topo da página)*/
   }
   
   .menu ul {
@@ -17,6 +41,12 @@ body {
   
   .menu li {
     list-style: none;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px; /*acompanhado do display aumenta a espessura da barra de menu*/
+    text-decoration: none;
   }
   
   a {
@@ -28,9 +58,15 @@ body {
     text-decoration: underline;
   }
   
+  .site-subtitle,
   .site-title {
     color: #4B4B4B;
     text-align: center;
+    font-size: 24px;
+  }
+
+  .site-title {
+    font-size: 4em;
   }
   
   .site-subtitle {
@@ -38,3 +74,7 @@ body {
     text-align: center;
   }
   
+  .img-portfolio {
+    height: 180px;
+    width: 180px;
+  }
